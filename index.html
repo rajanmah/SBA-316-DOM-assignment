@@ -12,9 +12,9 @@
 
 <body>
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><strong>|Asian HotPot |</strong></a>
+      <a class="navbar-brand" href="index.html"><strong id="brand">| Asian HotPot |</strong></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
         aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,28 +24,26 @@
           <li class="btn btn-dark"><a class="text" href="#">Home</a></li>
           <li class="btn btn-dark"><a class="text"href="#">Locations</a></li>
           <li class="btn btn-dark"><a class="text" href="#">Contact</a></li>
-          <li class="btn btn-dark"><a class="text" href="#el">Elite Membership</a></li>
-          <li class="btn btn-dark"><a class="text abt-us" href="#el"></a></li>
+          <li class="btn btn-dark"><a class="text" href="#h5">Elite Membership</a></li>
+          <li class="btn btn-dark"><a class="text login" href="#h4">Login</a></li>
 
         </ul>
       </div>
     </div>
   </nav>
   <!-- NavBar -->
-  <!-- <div>
-    <img style="width:100%; height:400px" src="https://www.nepalsanctuarytreks.com/wp-content/uploads/2018/07/newari-food-ethnic.jpg" alt="">
-</div> -->
+
 <div class="menubar practice">
 <div id="submenu">
-  
+  <h1>Click here to find todays Special!</h1> <br>
 </div>
 </div>
-
 
   <!-- main body -->
 
+<br id="h1">
   <div id="card">
-    <h1 id="h1">NEPALESE</h1><br>
+    <h1 >NEPALESE</h1><br>
     <div class="card" style="width: 33rem;">
       <img
         src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/01/Nepalese-Food_22th-oct.jpg"
@@ -81,9 +79,9 @@
     </div>
        
   </div>
-
+  <br id="h2">
   <div id="card">
-    <h1 id="h2">INDIAN</h1><br>
+    <h1>INDIAN</h1><br>
     <div class="card" style="width: 33rem;">
       <img
         src="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/w_1120,h_732,c_fill,g_auto/v1661347434/india-food-chicken-pakora/india-food-chicken-pakora-1120x732.jpg"
@@ -121,9 +119,10 @@
     </div>
        
   </div>
-
+  
+  <br id="h3">
   <div id="card">
-    <h1 id="h3">CHINESE</h1><br>
+    <h1>CHINESE</h1><br>
     <div class="card" style="width: 33rem;">
       <img
         src="https://www.travelchinaguide.com/images/photogallery/2019/1125161444.jpg"
@@ -161,13 +160,12 @@
        
   </div>
 <hr><hr>
-
-
 <!-- sign up form -->
+<br  id="h5">
 <div class="form-container">
-  <h1 id="el">Become an Elite Member</h1>
+  <h1 id="el" >Become an Elite Member</h1>
   <form
-  action="javascript: alert('Success!');"
+  action="javascript: alert('Successful! Please use your email and password to log in. Thank You');"
   name="myForm"
   method="POST"
   id="form"
@@ -186,11 +184,31 @@
 
   </select><br>
   <input type="password" name="password" placeholder="Password" /><br>
-  <input style="background-color: gray" type="submit" value="Submit" />
+  <input style="background-color: gray" type="submit" value="Sign Up" />
 </form>
 </div>
 
 <div id="userData"></div>
+
+<!-- Login -->
+<br id="h4">
+<div class="login-form">
+  <h1 id="el">Member Login</h1>
+<form name="loginForm" onsubmit="return validateForm()" method="post" id="form">
+  <div>
+           <input type="text" id="username" name="username" placeholder="Email"><br>
+      <span id="usernameError" class="error"></span>
+  </div>
+  <div>
+      <br>
+      <input type="password" id="password" name="password" placeholder="Password"><br>
+      <span id="passwordError" class="error"></span>
+  </div> <br>
+  <input type="submit" value="Login">
+  <h6 style="color:white">Sign up if you are not already our Elite Member!</h6>
+</form>
+</div>
+
 
 <!-- footer -->
 <footer>
